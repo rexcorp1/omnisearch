@@ -1,4 +1,4 @@
-# Morphic
+# Omnisearch
 
 An AI-powered search engine with a generative UI.
 
@@ -15,15 +15,15 @@ An AI-powered search engine with a generative UI.
 - 👥 [Contributing](#-contributing)
 - 📄 [License](#-license)
 
-📝 Explore AI-generated documentation on [DeepWiki](https://deepwiki.com/miurla/morphic)
+📝 Explore AI-generated documentation on [DeepWiki](https://deepwiki.com/miurla/omnisearch)
 
 ## 🧪 Try v1.0.0 Beta
 
-Want to experience the next generation of Morphic? The v1.0.0 beta is now available at [beta.morphic.sh](https://beta.morphic.sh)!
+Want to experience the next generation of Omnisearch? The v1.0.0 beta is now available at [beta.omnisearch.sh](https://beta.omnisearch.sh)!
 
-This major update includes exciting new features like advanced search modes, PostgreSQL database, enhanced UI, and much more. Learn more about what's new in [Issue #680](https://github.com/miurla/morphic/issues/680).
+This major update includes exciting new features like advanced search modes, PostgreSQL database, enhanced UI, and much more. Learn more about what's new in [Issue #680](https://github.com/miurla/omnisearch/issues/680).
 
-Your feedback helps shape the future of Morphic!
+Your feedback helps shape the future of Omnisearch!
 
 ## 🛠 Features
 
@@ -120,13 +120,13 @@ Models are configured in `public/config/models.json`. Each model requires its co
 Fork the repo to your Github account, then run the following command to clone the repo:
 
 ```bash
-git clone git@github.com:[YOUR_GITHUB_ACCOUNT]/morphic.git
+git clone git@github.com:[YOUR_GITHUB_ACCOUNT]/omnisearch.git
 ```
 
 ### 2. Install dependencies
 
 ```bash
-cd morphic
+cd omnisearch
 bun install
 ```
 
@@ -164,7 +164,7 @@ Visit http://localhost:3000 in your browser.
 
 ## 🌐 Deploy
 
-Host your own live version of Morphic with Vercel, Cloudflare Pages, or Docker.
+Host your own live version of Omnisearch with Vercel, Cloudflare Pages, or Docker.
 
 ### Vercel
 
@@ -175,15 +175,15 @@ Host your own live version of Morphic with Vercel, Cloudflare Pages, or Docker.
 Prebuilt Docker images are available on GitHub Container Registry:
 
 ```bash
-docker pull ghcr.io/miurla/morphic:latest
+docker pull ghcr.io/miurla/omnisearch:latest
 ```
 
 You can use it with docker-compose:
 
 ```yaml
 services:
-  morphic:
-    image: ghcr.io/miurla/morphic:latest
+  omnisearch:
+    image: ghcr.io/miurla/omnisearch:latest
     env_file: .env.local
     ports:
       - '3000:3000'
@@ -197,20 +197,20 @@ The default model configuration is located at `public/config/models.json`. For D
 
 ### Setting up the Search Engine in Your Browser
 
-If you want to use Morphic as a search engine in your browser, follow these steps:
+If you want to use Omnisearch as a search engine in your browser, follow these steps:
 
 1. Open your browser settings.
 2. Navigate to the search engine settings section.
 3. Select "Manage search engines and site search".
 4. Under "Site search", click on "Add".
 5. Fill in the fields as follows:
-   - **Search engine**: Morphic
-   - **Shortcut**: morphic
-   - **URL with %s in place of query**: `https://morphic.sh/search?q=%s`
+   - **Search engine**: Omnisearch
+   - **Shortcut**: omnisearch
+   - **URL with %s in place of query**: `https://omnisearch.sh/search?q=%s`
 6. Click "Add" to save the new search engine.
-7. Find "Morphic" in the list of site search, click on the three dots next to it, and select "Make default".
+7. Find "Omnisearch" in the list of site search, click on the three dots next to it, and select "Make default".
 
-This will allow you to use Morphic as your default search engine in the browser.
+This will allow you to use Omnisearch as your default search engine in the browser.
 
 ## 💙 Sponsors
 
@@ -222,7 +222,7 @@ This project is proudly supported by:
 
 ## 👥 Contributing
 
-We welcome contributions to Morphic! Whether it's bug reports, feature requests, or pull requests, all contributions are appreciated.
+We welcome contributions to Omnisearch! Whether it's bug reports, feature requests, or pull requests, all contributions are appreciated.
 
 Please see our [Contributing Guide](CONTRIBUTING.md) for details on:
 
