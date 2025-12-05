@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation'
 
 import { User } from '@supabase/supabase-js'
-import { LogOut, Palette } from 'lucide-react'
+import { Link2, LogOut, Palette } from 'lucide-react'
 
 import { createClient } from '@/lib/supabase/client'
 
@@ -21,6 +21,7 @@ import {
 } from '@/components/ui/dropdown-menu'
 
 import { Button } from './ui/button'
+import { ExternalLinkItems } from './external-link-items'
 import { ThemeMenuItems } from './theme-menu-items'
 
 interface UserMenuProps {
@@ -58,8 +59,8 @@ export default function UserMenu({ user }: UserMenuProps) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" className="relative h-8 w-8 rounded-full">
-          <Avatar className="h-8 w-8">
+        <Button variant="ghost" className="relative h-6 w-6 rounded-full">
+          <Avatar className="h-6 w-6">
             <AvatarImage src={avatarUrl} alt={userName} />
             <AvatarFallback>{getInitials(userName, user.email)}</AvatarFallback>
           </Avatar>
@@ -84,6 +85,15 @@ export default function UserMenu({ user }: UserMenuProps) {
           </DropdownMenuSubTrigger>
           <DropdownMenuSubContent>
             <ThemeMenuItems />
+          </DropdownMenuSubContent>
+        </DropdownMenuSub>
+        <DropdownMenuSub>
+          <DropdownMenuSubTrigger>
+            <Link2 className="mr-2 h-4 w-4" />
+            <span>Links</span>
+          </DropdownMenuSubTrigger>
+          <DropdownMenuSubContent>
+            <ExternalLinkItems />
           </DropdownMenuSubContent>
         </DropdownMenuSub>
         <DropdownMenuSeparator />
